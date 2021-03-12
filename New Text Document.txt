@@ -1,0 +1,5 @@
+git innit
+git add.
+git status
+git config --global --list
+git config --global.user.name
