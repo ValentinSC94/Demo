@@ -1,0 +1,268 @@
+h1 {
+    color: rgb(155, 8, 8)
+
+}
+
+
+
+.title {
+    color: rgb(17, 16, 16);
+}
+
+#Title2 {
+  color: peru;
+}
+
+#italic {
+    color: rgb(27, 27, 27);
+}
+
+.container {
+    
+    border: 10px solid rgba(36, 34, 34, 0.582) ;
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 0px 10px 60px;
+}
+.a1 {
+    color: peru;
+    margin: 20px 30px 50px 50px;
+}
+
+#non {
+    color: peru;
+}
+
+.a2 {
+    color: peru;
+}
+
+#h1 {
+    color:peru;
+}
+
+#h2 {
+    color: peru;
+}
+#h3 {
+    color: peru;
+}
+#h4 {
+    color: peru;
+
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: orangered;
+    margin: 50px;
+}
+
+@keyframes fadeMe {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, peru, yellow, pink, purple, peru);
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: peru;
+}
+
+@keyframes changeColors {
+    0% {background-color: grey;}
+    25% {background-color: purple;}
+    50% {background-color: yellow;}
+    75% {background-color: blue;}
+    100% {background-color: green;}
+     
+
+}
+
+#box4 {
+    animation: changeColors 3s 2s infinite;
+    
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 100px;}
+    75% {left: 0px; top: 100px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    background: red;
+    animation: moveBox 5s infinite;
+}
+
+#box6 {
+    
+    animation: moveBox 5s infinite;
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+html {
+    background:whitesmoke;
+    
+}
+
+.nav1 {
+    background-color: burlywood;
+}
+
+.navab {
+    background-color: saddlebrown;
+    
+}
+.navct {
+    background-color: peru;
+    
+}
+
+#navh {
+    background-color: brown;
+}
+
+.has1 {
+    text-align: center;
+}
+a {
+    text-decoration-line: none;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.circle-Img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 5px 5px 5px 10px rgba(36, 34, 34, 0.582)
+}
+.flex {
+    border: 3px solid rgba(36, 34, 34, 0.582);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+    flex-direction: raw;
+    padding: 50px;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 10px;
+
+}
+
+body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, [col] 20% ) ;
+      grid-template-rows: repeat(3, [row] auto  );
+      background-color: peru;
+      color: #444;
+    }
+  
+    .Boxab {
+      background-color: peru;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      z-index:10;
+  
+    }
+  
+    .a {
+      grid-column: col / span  2;
+      grid-row: row ;
+      display: flex;
+      justify-content: center;
+    }
+    .b {
+      grid-column: col 4 / span  2 ;
+      grid-row: row ;
+      display: flex;
+      justify-content: center;
+    }
+    .c {
+      grid-column: col / span 5 ;
+      grid-row: row 2 ;
+      display: flex;
+      justify-content: center;
+      background-image: linear-gradient(peru, brown, grey);
+    }
+    .d {
+      grid-column: col  / span 3 ;
+      grid-row: row 3 ;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .e {
+      grid-column: col 3 / span 3 ;
+      grid-row: row 3;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .f {
+      grid-column: col 2 / span 3;
+      grid-row: row 2  ;
+      background-color: rgba(49,121,207, 0.5);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      background-image: linear-gradient(peru, brown, grey);
+    }
